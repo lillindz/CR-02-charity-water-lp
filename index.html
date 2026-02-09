@@ -1,47 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charity: water | Clean Water. Clear Impact.</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
+  <!-- NAV -->
+  <header class="header">
+    <div class="container nav">
+      <img src="img/cw_logo.png" alt="charity: water logo" class="logo" />
+      <nav class="nav-links">
+        <a href="#story">Story</a>
+        <a href="#impact">Impact</a>
+        <a class="nav-cta" href="#take-action">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Activating the next generation of supporters</p>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+          <h1>Clean Water.<br />Clear Impact.</h1>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+          <p class="subheadline">
+            Support a nonprofit that turns transparency into action by funding sustainable clean water projects,
+            where <strong>100% of public donations</strong> directly support the mission.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#take-action">Make Clean Water Possible</a>
+            <a class="btn btn-outline" href="#story">Learn More</a>
+          </div>
+
+          <div class="proof">
+            <div class="proof-card">
+              <p class="proof-title">100%</p>
+              <p class="proof-text">of public donations fund clean water projects</p>
+            </div>
+            <div class="proof-card">
+              <p class="proof-title">Proof</p>
+              <p class="proof-text">transparent reporting + real project updates</p>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-right">
+          <img src="img/water-can-transparent.png" alt="Clean water impact" class="hero-img" />
+        </div>
+      </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+    <!-- STORY -->
+    <section class="section" id="story">
+      <div class="container split">
+        <div>
+          <h2>Why this matters</h2>
+          <p>
+            Millions of people still spend hours walking for water — and that water can be unsafe.
+            Access to clean water improves health, education, and opportunity.
+          </p>
+          <p>
+            charity: water funds sustainable water projects and shares updates so supporters can see
+            real-world results in a transparent, trustworthy way.
+          </p>
+        </div>
+
+        <div class="story-card">
+          <h3>Your student impact</h3>
+          <p>
+            Small donations add up fast. When college communities rally together, the impact is real —
+            and it can create long-term change without using guilt-based messaging.
+          </p>
+        </div>
+      </div>
     </section>
+
+    <!-- IMPACT -->
+    <section class="section section-alt" id="impact">
+      <div class="container">
+        <div class="section-head">
+          <h2>What your support creates</h2>
+          <p>Clean water strengthens communities in ways you can feel and measure.</p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Health</h3>
+            <p>Safe water reduces disease and supports healthier families.</p>
+          </div>
+
+          <div class="card">
+            <h3>Education</h3>
+            <p>Less time collecting water means more time in school.</p>
+          </div>
+
+          <div class="card">
+            <h3>Opportunity</h3>
+            <p>Reliable water access helps communities grow long-term stability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="take-action">
+      <div class="container cta-grid">
+        <div>
+          <h2>Make clean water possible today</h2>
+          <p>
+            Join students who support ethical, transparent giving that leads to real impact.
+          </p>
+        </div>
+
+        <div class="donate-box">
+          <label for="amount">Choose a donation amount</label>
+
+          <div class="donate-row">
+            <select id="amount">
+              <option>$15</option>
+              <option selected>$30</option>
+              <option>$50</option>
+              <option>$100</option>
+            </select>
+
+            <button class="btn btn-primary" type="button">Donate</button>
+          </div>
+
+          <p class="fineprint">
+            Class project demo button. (Optional: link to the real donation page if allowed.)
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="img/cw_logo.png" alt="charity: water logo" class="logo small" />
+        <p>Built as a branded landing page using HTML + CSS.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#story">Story</a>
+        <a href="#impact">Impact</a>
+        <a href="#take-action">Take Action</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
